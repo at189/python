@@ -6,8 +6,6 @@ minor = False
 name = "David"
 weight = 64.5
 zip = "545"
-
-
 int(整數)  :apple.age
 bool(布林) :minor
 zip = "545"
