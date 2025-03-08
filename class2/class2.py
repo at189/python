@@ -29,7 +29,7 @@ print(type(True))  # 取型態
 # bool()轉換成布林值
 
 print(int("123"))  # 123
-print(int("123.9999"))  # 123
+print(int(123.9999))  # 123
 print(int(True))  # 1
 print(int(False))  # 0
 print("------------------------")
