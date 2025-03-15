@@ -40,11 +40,14 @@ bmi = w/h**2
 EX:
 請輸入身高:1.7
 請輸入體重:50
-你的BMI為17.301038062283737
+你的BMI為17.30103806228373
 """
+
 h = input("請輸入身高:")
 w = input("請輸入體重:")
+
 h = float(h)
 w = float(w)
+
 bmi = w / h**2
-print("你的BMI為", bmi)
+print("你的BMI為", bmi)  # 印出計算結果1.
