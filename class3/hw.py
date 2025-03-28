@@ -13,8 +13,14 @@
 
 """
 
-password = input("請輸入華氏溫度")
-if password == "60":
-    print("華氏溫度60.0F等於攝氏溫度15.555555555555555C")
-else:
-    print("輸入錯誤!")
+
+def fahrenheit_to_celsius():
+    try:
+        fahrenheit = float(input("請輸入華氏溫度: "))
+        celsius = (fahrenheit - 32) * 5 / 9
+        print(f"華氏溫度{fahrenheit}F等於攝氏溫度{celsius}C")
+    except ValueError:
+        print("輸入錯誤!")
+
+
+fahrenheit_to_celsius()
