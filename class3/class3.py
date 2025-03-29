@@ -61,3 +61,18 @@ else:
 
 # if elif elseg是連續的判斷，只要有一個條件成立，後面的判斷就不會執行
 # if一定要有，elif可以有多個，else可以沒有
+
+try:
+    grade = int(input("請輸入成績:"))
+    if grade >= 90:
+        print("A")
+    elif grade >= 80:
+        print("B")
+    elif grade >= 70:
+        print("C")
+    elif grade >= 60:
+        print("D")
+    else:
+        print("F")
+except:
+    print("請輸入數字")
