@@ -38,17 +38,17 @@
 # for i in range(1, 6, 2):  # range=1,3,5
 #     print(i)
 
-# import turtle as t
+import turtle as t
 
-# for i in range(4):
-#     t.forward(150)  # 前進100步
-#     t.right(90)  # 右邊向前轉90度
-# t.done()  # 讓視窗不要關閉
+for i in range(4):
+    t.forward(150)  # 前進100步
+    t.right(90)  # 右邊向前轉90度
+t.done()  # 讓視窗不要關閉
 
-import turtle
+# import turtle
 
-turtle.color("red")  # 設定顏色
-turtle.shape("turtle")  # 設定形狀
-turtle.stamp()  # 蓋章
-turtle.penup()  # 提筆
-turtle.done()  # 讓視窗不要關閉
+# turtle.color("red")  # 設定顏色
+# turtle.shape("turtle")  # 設定形狀
+# turtle.stamp()  # 蓋章
+# turtle.penup()  # 提筆
+# turtle.done()  # 讓視窗不要關閉

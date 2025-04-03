@@ -1,0 +1,9 @@
+import turtle as t
+
+for i in range(5):
+    for i in range(5):
+        t.forward(30)
+        t.stamp()
+        t.right(30)
+        t.shape("turtle")  # 設定形狀
+t.done()  # 讓視窗不要關閉

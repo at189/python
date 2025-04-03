@@ -18,16 +18,43 @@ EX:
 體重過重
 """
 
-try:
-    h = float(input("請輸入身高(公尺):"))
-    w = float(input("請輸入體重(公斤):"))
-    bmi = w / h**2
-    if bmi < 14.8:
-        print("體重過輕")
+# try:
+#     h = float(input("請輸入身高(公尺):"))
+#     w = float(input("請輸入體重(公斤):"))
+#     bmi = w / h**2
+#     if bmi < 14.8:
+#         print("體重過輕")
 
-    elif bmi > 20.7:
-        print("體重過重")
-    else:
-        print("體重正常")
-except:
-    print("請輸入數字")
+#     elif bmi > 20.7:
+#         print("體重過重")
+#     else:
+#         print("體重正常")
+# except:
+#     print("請輸入數字")
+# # 參考code
+# import turtle as t
+
+# t.penup()
+# t.color("red")
+# t.shape("turtle")
+# for i in range(120):
+#     t.forward(20)
+#     t.stamp()
+#     t.right(10)
+
+# t.done()
+# for i in range(4):
+
+
+# t.penup()
+# t.color("red")
+# t.shape("turtle")
+import turtle as t
+
+for i in range(5):
+    for i in range(5):
+        t.forward(30)
+        t.stamp()
+        t.right(30)
+        t.shape("turtle")  # 設定形狀
+t.done()  # 讓視窗不要關閉
