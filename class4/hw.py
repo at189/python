@@ -53,8 +53,8 @@ import turtle as t
 
 t.penup()
 t.shape("turtle")
-for i in range(30):
-    t.forward(10 * i)
+for i in range(50):
+    t.forward(8 * i)
     t.right(55)
     t.stamp()
     # 設定形狀
