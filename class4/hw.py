@@ -52,8 +52,9 @@ EX:
 import turtle as t
 
 t.penup()
-t.shape("circle")
-t.speed(0)
+t.color("red")
+
+
 for i in range(300):
     t.forward(1 * i)
     t.right(20)

@@ -42,9 +42,9 @@ import turtle as t
 
 for i in range(4):
     t.forward(150)  # 前進100步
-    t.right(90)  # 右邊向前轉90度
+    # 右邊向前轉90度
 t.done()  # 讓視窗不要關閉
-
+#  t.right(90)
 # import turtle
 
 # turtle.color("red")  # 設定顏色
