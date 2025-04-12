@@ -51,14 +51,11 @@ EX:
 # t.shape("turtle")
 import turtle as t
 
-for i in range(10):
-    t.forward(30)
-    t.right(30)
+t.penup()
+t.shape("turtle")
+for i in range(30):
+    t.forward(10 * i)
+    t.right(55)
     t.stamp()
-    t.shape("turtle")  # 設定形狀
-    for i in range(10):
-        t.forward(30)
-        t.right(30)
-        t.stamp()
-        t.shape("turtle")
+    # 設定形狀
 t.done()  # 讓視窗不要關閉
