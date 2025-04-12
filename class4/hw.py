@@ -55,7 +55,7 @@ t.penup()
 t.shape("turtle")
 for i in range(60):
     t.forward(8 * i)
-    t.right(85)
+    t.right(65)
     t.stamp()
     # 設定形狀
 t.done()  # 讓視窗不要關閉
