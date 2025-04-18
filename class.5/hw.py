@@ -5,23 +5,23 @@
 """
 
 # t.home()#讓烏龜回到原點的指令的指令
-import turtle as t
+# import turtle as t
 
-t.color("yellow")
-t.pensize(5)
-t.penup()
-t.shape("turtle")
-t.fillcolor("yellow")
-t.begin_fill()
-for i in range(5):
-    t.forward(200)
-    t.right(144)
-t.end_fill()
-t.done()
+# t.color("yellow")
+# t.pensize(5)
+# t.penup()
+# t.shape("turtle")
+# t.fillcolor("yellow")
+# t.begin_fill()
+# for i in range(5):
+#     t.forward(200)
+#     t.right(144)
+# t.end_fill()
+# t.done()
 
-for i in range(1, 10):
-    for j in range(1, 10):
-        print(i * j)
+# for i in range(1, 10):
+#     for j in range(1, 10):
+#         print(i * j)
 """
 使用turtle 繪製時鐘
 """
@@ -58,3 +58,26 @@ EX:
   *
   *
 """
+
+import turtle as t  # 匯入turtle模組
+import time
+
+
+# t.color("red")  # 設定顏色為紅色
+
+
+for i in range(60):
+    t.clear()
+    t.home()
+    t.right(i * 6)
+    t.forward(100)
+    time.sleep(1)
+
+
+# 輸入一個數字
+n = int(input("請輸入整數: "))
+
+
+for i in range(1, n + 1):
+    if i % 3 == 0 or i % 7 == 0:  # 如果是3或7的倍數
+        print(i)  # 顯示這個數字
