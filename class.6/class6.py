@@ -26,11 +26,7 @@ while i < 10:
 # 7and or not邏輯運算子
 # 8.= += -= *= /= //= %= **=
 
-i = input("請輸入密碼:")
-while i:
-    if i == "123456":
-        print("密碼正確")
-        print("歡迎光臨")
-    else:
-        print("密碼錯誤")
-        i = input("請輸入密碼:")
+user_input = ""
+while user_input != "1234":
+    user_input = input("請輸入數字:")
+print("密碼正確")
