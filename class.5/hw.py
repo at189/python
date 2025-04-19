@@ -73,28 +73,28 @@ EX:
 #     t.clear()
 
 
-n = int(input("請輸入整數: "))
+# n = int(input("請輸入整數: "))
 
 
-for i in range(1, n + 1):
-    if i % 3 == 0 or i % 7 == 0:
-        print(i)
+# for i in range(1, n + 1):
+#     if i % 3 == 0 or i % 7 == 0:
+#         print(i)
 
 
-import turtle as t
+# import turtle as t
 
 
-t.penup()
-for i in range(13):
-    t.forward(100)
-    t.stamp()
-    t.home()
-    t.right(30 * i)
-t.done()
+# t.penup()
+# for i in range(13):
+#     t.forward(100)
+#     t.stamp()
+#     t.home()
+#     t.right(30 * i)
+# t.done()
 
 n = int(input("請輸入要印出的箭頭大小:"))
 
 for i in range(1, n + 1):
     print(f" " * (n - i) + "*" * (2 * i - 1))
 for i in range(1, n + 1):
-    print(f" " * (n - i) + " * " * (2 * i - 1))
+    print(f" " * (n - 1) + "*")
