@@ -59,25 +59,42 @@ EX:
   *
 """
 
-import turtle as t  # 匯入turtle模組
-import time
+# import turtle as t
+# import time
+
+# t.color("orange")
+# t.speed(0)
+
+# for i in range(60):
+#     t.right(6 * i)
+#     t.forward(80)
+#     time.sleep(1)
+#     t.home()
+#     t.clear()
 
 
-# t.color("red")  # 設定顏色為紅色
-
-
-for i in range(60):
-    t.clear()
-    t.home()
-    t.right(i * 6)
-    t.forward(100)
-    time.sleep(1)
-
-
-# 輸入一個數字
 n = int(input("請輸入整數: "))
 
 
 for i in range(1, n + 1):
-    if i % 3 == 0 or i % 7 == 0:  # 如果是3或7的倍數
-        print(i)  # 顯示這個數字
+    if i % 3 == 0 or i % 7 == 0:
+        print(i)
+
+
+import turtle as t
+
+
+t.penup()
+for i in range(13):
+    t.forward(100)
+    t.stamp()
+    t.home()
+    t.right(30 * i)
+t.done()
+
+n = int(input("請輸入要印出的箭頭大小:"))
+
+for i in range(1, n + 1):
+    print(f" " * (n - i) + "*" * (2 * i - 1))
+for i in range(1, n + 1):
+    print(f" " * (n - i) + " * " * (2 * i - 1))
