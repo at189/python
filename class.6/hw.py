@@ -1,16 +1,9 @@
-total = 0
+f = int(input("請輸入商品金額："))
 
-總金額 = 0
-
-
-價錢 = 1
+sum = 0
 
 
-while 價錢 != 0:
-    價錢 = int(input("請輸入商品金額："))
-
-    if 價錢 != 0:
-        總金額 = 總金額 + 價錢
-        print("目前總金額是", 總金額, "元")
-
-print("結束")
+while f > 0:
+    f = int(input("請輸入商品金額："))
+    sum = sum + f
+print("sum")
