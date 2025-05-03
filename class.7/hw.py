@@ -19,5 +19,5 @@ EX:
 f = int(input("請輸入開始整數"))
 a = int(input("請輸入結束整數"))
 for i in range(f, a):
-    if i % 2 == 0:
+    if i % 3 == 0:
         print(i)
