@@ -21,3 +21,22 @@ while True:
         break
     else:
         print("輸入錯勿")
+
+
+import random
+
+r = random.randrange(1, 100)
+import random
+
+print(random.randint(1, 100))
+print(random.randrange(1, 101))
+ans = random.randint(1, 100)
+while True:
+    x = int(input("請輸入1到100的整數: "))
+    if x == ans:
+        print("正確")
+        break
+    elif x < ans:
+        print("太小了")
+    elif x > ans:
+        print("太大了")
