@@ -2,41 +2,37 @@ juices_list = ["蘋果汁", "柳橙汁", "葡萄汁", "系統關閉"]
 
 
 while True:
-    print("請選一個果汁")
-    print("1. 蘋果汁")
-    print("2. 柳橙汁")
-    print("3. 葡萄汁")
-    print("4. 系統關閉")
-
-    number = input("請輸入編號：")
-
-    if number == "1":
-        print("你點的是 蘋果汁 ")
-    elif number == "2":
-        print("你點的是 柳橙汁 ")
-    elif number == "3":
-        print("你點的是 葡萄汁 ")
-    elif number == "4":
+    for i in range(len(juices_list)):
+        print(f"{i + 1}.{juices_list[i]}")
+    try:
+        n = int(input("請輸入編號："))
+    except:
+        print("查無此編號")
+        continue
+    if n == len(juices_list):
         print("系統關閉")
         break
+    elif 1 <= n < len(juices_list):
+        print(f"{juices_list[n-1]}")
     else:
-        print("輸入錯勿")
+        print("查無此編號")
 
 
 import random
 
-r = random.randrange(1, 100)
-import random
-
-print(random.randint(1, 100))
-print(random.randrange(1, 101))
-ans = random.randint(1, 100)
+big = 100
+small = 0
+r = random.randrange(1, 100)  # 1到100的隨機數
 while True:
-    x = int(input("請輸入1到100的整數: "))
-    if x == ans:
+    x = int(input(f"請輸入一個{small}到{big}的整數: "))
+    if x == r:
         print("正確")
         break
-    elif x < ans:
+    elif x < r:
         print("太小了")
-    elif x > ans:
+        if x > small:
+            small = x
+    elif x > r:
         print("太大了")
+        if x < big:
+            big = x
