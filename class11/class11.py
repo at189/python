@@ -40,19 +40,44 @@ print(L)  # ['hello']
 # 4️⃣ 離開程式
 #     👋 不想逛了就回家！
 
-List = []
+L = []
 
 
 while True:
-    print("1.新增東西")
-    print("2.修改東西")
-    print("3.刪除東西")
-    print("4.離開程式")
-p == input("請輸入你的選擇1-4:")
-if p == "1":
-    print("請輸入新增的東西:")
-    print("請輸入新增的東西:")
-    new = input()
-    a = List.append(new)
-    b = List.insert(new)
-    print(List)
+    print(L)
+    print("1. 加東西")
+    print("2. 改東西")
+    print("3. 刪東西")
+    print("4. 離開")
+
+    選項 = input("請輸入1到4：")
+
+    if 選項 == "1":
+        item = input("請輸入東西：")
+        print("a. 加到尾端 b. 插入指定位置")
+        選項 = input("請輸入a或b：")
+        if 選項 == "a":
+            L.append(item)
+        elif 選項 == "b":
+            num = int(input("請輸入插入位置："))
+            L.insert(num, item)
+
+    elif 選項 == "2":
+        num = int(input("請輸入編號："))
+        item = input("請輸入東西：")
+        L[num] = item
+
+    elif 選項 == "3":
+        print("a. 依名稱刪除 b. 依位置刪除")
+        選項 = input("請輸入a或b：")
+        if 選項 == "a":
+            L.remove(item)
+        elif 選項 == "b":
+            num = int(input("請輸入刪除位置："))
+            L.pop(num)
+    elif 選項 == "4":
+        print("再見")
+        break
+
+    else:
+        print("請輸入 1 到 4 ")
