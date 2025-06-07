@@ -22,4 +22,37 @@ L.pop()  # 刪除最後一個資料
 print(L)  # ["hello", "world"]
 s = L.pop(1)  # 刪除索引1的資料
 print(s)  # world
-print(L)  # ["hello"]
+print(L)  # ['hello']
+
+
+# """
+# 你是一位「購物小幫手」！幫媽媽記下要買的東西，還能修改、刪除，或是看看清單裡有什麼。
+# 📋 你可以做這些事：
+# 程式會在每一步自動顯示目前的購物清單。
+# 1️⃣ 新增東西
+#     ➕ 加到清單最後（append）
+#     📌 新增到清單中的某個位置（insert）
+# 2️⃣ 修改東西
+#     ✏️ 輸入編號，換掉舊項目
+# 3️⃣ 刪除東西
+#     ❌ 用名稱刪除（remove）
+#     🗑️ 用位置刪除（pop）
+# 4️⃣ 離開程式
+#     👋 不想逛了就回家！
+
+List = []
+
+
+while True:
+    print("1.新增東西")
+    print("2.修改東西")
+    print("3.刪除東西")
+    print("4.離開程式")
+p == input("請輸入你的選擇1-4:")
+if p == "1":
+    print("請輸入新增的東西:")
+    print("請輸入新增的東西:")
+    new = input()
+    a = List.append(new)
+    b = List.insert(new)
+    print(List)
