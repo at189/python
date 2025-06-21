@@ -62,12 +62,13 @@ while True:
             num = int(input("請輸入插入位置："))
             L.insert(num, item)
 
-    elif 選項 == "2":
+    elif 選項 == "2":1
+
         num = int(input("請輸入編號："))
         item = input("請輸入東西：")
         L[num] = item
 
-    elif 選項 == "3":
+        elif 選項 == "3":
         print("a. 依名稱刪除 b. 依位置刪除")
         選項 = input("請輸入a或b：")
         if 選項 == "a":
@@ -75,9 +76,9 @@ while True:
         elif 選項 == "b":
             num = int(input("請輸入刪除位置："))
             L.pop(num)
-    elif 選項 == "4":
+        elif 選項 == "4":
         print("再見")
         break
 
-    else:
+        else:
         print("請輸入 1 到 4 ")
