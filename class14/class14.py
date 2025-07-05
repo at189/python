@@ -75,3 +75,74 @@ length = 5  # 全域變數
 
 def colculate_square_area():
     area = length**2  # length是全域變數,area是區域變數
+    # length=length+#這行會出錯
+    # 因為在函數內部,length是區域變數不能直接修改全域變數
+    print("面積是", area)
+
+
+colculate_square_area()
+# print("長度是",area)#這行會出錯,因為area是區域變數,只能在函數內部使用
+
+length = 5  # 全域變數
+
+
+def colculate_square_area():
+    area = length**2  # length是全域變數,area是區域變數
+    print("面積是", area)
+
+
+length = 10  # 全域變數
+colculate_square_area()  # 面積是100
+# 因為要等到函數被呼叫了才會執行,所以area的值是在函數被呼叫時才會被計算
+
+
+length = 5  # 全域變數
+area = 100  # 全域變數
+
+
+def colculate_square_area():
+    area = length**2  # length是全域變數,area是區域變數
+
+
+colculate_square_area()
+print("面積是", area)  # 面積是100
+# 這個時候指令內部的area是區域變數,不會影響到全域變數的值
+
+length = 5  # 全域變數
+area = 100  # 全域變數
+
+
+def colculate_square_area() -> int:
+    area = length**2  # length是全域變數,area是區域變數
+    return area
+
+
+area = colculate_square_area()
+print("面積是", area)  # 面積是25
+
+length = 5  # 全域變數
+area = 100  # 全域變數
+
+
+def colculate_square_area():
+    global area  # 使用global,將area變成全域變數,可以在函數內部修改全域變數的值
+    area = length**2  # length是全域變數,area是區域變數
+
+
+colculate_square_area()
+print("面積是", area)  # 面積是25
+
+
+def hello(name: str):  # 函數傳入參數都是區域變數
+    """
+    只令說明區\n
+    這是一個打招呼的函數\n
+    參數:\n
+    name:str-姓名
+
+    回傳:None
+
+    範例:hello("Alice")
+    """
+    print(f"hello,{name}!")
+    print("參數的型態是", type(name))
